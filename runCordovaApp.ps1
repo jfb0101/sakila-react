@@ -1,10 +1,12 @@
 $reactAppPath = $PSScriptRoot
 $cordovaAppPath = "E:\puc\iot\projetos\SakilaCordova"
 
-npm run build --prefix $reactAppPath
+yarn --cwd $reactAppPath build
 
 remove-item -force -recurse $cordovaAppPath\www
 
 new-item -ItemType Directory $cordovaAppPath\www
 
-copy-item $reactAppPath\build\* $cordovaAppPath\www\
+copy-item -recurse $reactAppPath\build\* $cordovaAppPath\www\
+
+npm run android --prefix $cordovaAppPath 
