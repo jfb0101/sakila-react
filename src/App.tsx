@@ -5,7 +5,9 @@ import { Login } from './components/login/Login';
 import { Routes } from './components/login/Routes';
 
 function App() {
-  return <Routes/>
+  return <div style={containerStyle}>
+    <Routes/>
+  </div>
 }
 
 export default App;

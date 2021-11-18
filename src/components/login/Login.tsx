@@ -27,6 +27,5 @@ export const Login = (props:LoginProps) => {
 const containerStyle: React.CSSProperties = {
     display: 'flex',
     flexDirection: 'column',
-    maxWidth: '200px',
     gap: '10px'
 }
