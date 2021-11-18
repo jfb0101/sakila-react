@@ -2,12 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Login } from './components/login/Login';
+import { Routes } from './components/login/Routes';
 
 function App() {
-  return <div style={containerStyle}>
-    <Login
-      onDoLogin={() => {}}/>
-  </div>
+  return <Routes/>
 }
 
 export default App;

@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {  BrowserRouter, HashRouter } from "react-router-dom"
+import { executionEnvironment } from './executionEnvironment';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ReactDOM.render(executionEnvironment == "ANDROID" ? <HashRouter>
+                    <App/>
+                </HashRouter> :  
+                <BrowserRouter>
+                  <App/>
+                </BrowserRouter>,
   document.getElementById('root')
 );
 
