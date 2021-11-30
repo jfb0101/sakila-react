@@ -1,5 +1,5 @@
 $reactAppPath = $PSScriptRoot
-$cordovaAppPath = "E:\puc\iot\projetos\SakilaCordova"
+$cordovaAppPath = "D:\puc\iot\projetos\SakilaCordova"
 
 yarn --cwd $reactAppPath build
 
